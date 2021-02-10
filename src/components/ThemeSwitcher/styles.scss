@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.dark-switcher {
+  color: $light-text-color;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 2.5rem;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__icon {
+    transition: all 1s ease-in-out;
+  }
+}
+
+.dark {
+  .dark-switcher {
+    color: $dark-text-color;
+
+    &__icon {
+      color: $light-bg;
+    }
+  }
+}

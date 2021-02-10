@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.nav {
+  &__profile-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    padding: 5px;
+    border: 2px solid $color-pink;
+
+    img {
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+}
