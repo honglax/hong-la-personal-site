@@ -5,16 +5,17 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1.25rem 0;
+  padding-bottom: 1.125rem;
 
   &__left-nav {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
 
-    span {
-      margin-left: 1rem;
-      font-size: 1.25rem;
+    h1 {
+      margin-left: 1em;
+      font-size: 1.25em;
+      font-weight: normal;
       color: $color-pink;
     }
   }

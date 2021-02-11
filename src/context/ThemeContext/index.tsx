@@ -9,9 +9,6 @@ type ContextProps = {
 
 export const ThemeContext = createContext<Partial<ContextProps>>({})
 
-const supportsDarkMode = () =>
-  window.matchMedia('(prefers-color-scheme: dark)').matches === true
-
 const AppProvider = ({ children }: { children: any }) => {
   const [darkMode, setDarkMode] = useState(false)
   const toggleDarkMode = () => {
@@ -20,10 +17,7 @@ const AppProvider = ({ children }: { children: any }) => {
   }
 
   useEffect(() => {
-    const isDark = JSON.parse(localStorage.getItem('darkMode') as string)
-    const doesSupportsDarkMode = supportsDarkMode()
-    setDarkMode(isDark ? isDark : doesSupportsDarkMode)
-    localStorage.setItem('darkMode', JSON.stringify(doesSupportsDarkMode))
+    setDarkMode(localStorage.getItem('darkMode') === 'true' ? true : false)
   }, [])
 
   const value: ContextProps = { toggleDarkMode, darkMode }

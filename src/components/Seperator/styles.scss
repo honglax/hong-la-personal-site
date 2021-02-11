@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.seperator {
+  position: relative;
+  height: 2rem;
+  width: 0.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.25 linear;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+  }
+
+  &::before {
+    left: 0;
+    height: 100%;
+    background-color: $light-text-color;
+  }
+
+  &::after {
+    left: 0.25rem;
+    height: 75%;
+    background-color: $color-pink;
+  }
+}
+
+.dark .seperator::before {
+  background-color: $light-bg;
+}

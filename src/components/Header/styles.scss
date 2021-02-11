@@ -1,0 +1,17 @@
+header {
+  margin: 4rem 0;
+
+  .header {
+    &-content {
+      p {
+        margin-bottom: 0.6rem;
+        text-indent: 4%;
+        width: 100%;
+      }
+    }
+
+    &-btn {
+      margin-top: 1.75rem;
+    }
+  }
+}

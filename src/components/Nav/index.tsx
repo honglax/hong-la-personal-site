@@ -11,7 +11,7 @@ const Nav = () => (
         imageURL={String(profileImg)}
         siteTitle='Hong La - A Cat Lover'
       />
-      <span>Hong La</span>
+      <h1>Hong La</h1>
     </div>
     <div className='navigation__right-nav'>
       <ThemeSwitcher />

@@ -1,14 +1,21 @@
 import React, { useContext } from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { ThemeContext } from '@/context/'
+import Container from '@/components/Container'
 import Nav from '@/components/Nav'
-import classNames from 'classnames'
+import Header from '@/components/Header'
 
 const App = () => {
-  const { darkMode, toggleDarkMode } = useContext(ThemeContext)
+  const { darkMode } = useContext(ThemeContext)
   return (
-    <div className={classNames('container', darkMode ? 'dark' : 'light')}>
-      <Nav />
-    </div>
+    <Router>
+      <div className={darkMode ? 'dark' : 'light'}>
+        <Container>
+          <Nav />
+          <Header />
+        </Container>
+      </div>
+    </Router>
   )
 }
 

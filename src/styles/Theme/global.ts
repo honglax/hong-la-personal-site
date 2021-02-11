@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
+    letter-spacing: 0.02rem;
   }
 
   p, ul {
@@ -18,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   #root {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Raleway', sans-serif;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -31,5 +32,11 @@ export const GlobalStyles = createGlobalStyle`
   .container {
     width: 100%;
     max-width: 1024px;
+    padding: 1.125rem;
+  }
+
+  p {
+    text-align: justify;
+    line-height: 1.5;
   }
 `
