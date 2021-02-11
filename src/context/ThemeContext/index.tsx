@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { lightTheme, darkTheme, GlobalStyles } from '@/styles/Theme'
+import { lightTheme, darkTheme, GlobalStyles } from '@/styles'
 
 type ContextProps = {
   toggleDarkMode: () => void

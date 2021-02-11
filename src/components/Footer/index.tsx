@@ -2,6 +2,7 @@ import React from 'react'
 import { IconType } from 'react-icons'
 import { FaCat, FaGithub, FaLinkedin } from 'react-icons/fa'
 import styled, { StyledComponent } from 'styled-components'
+import { colorPink } from '@/constant'
 
 type SocialData = {
   id: number
@@ -43,7 +44,7 @@ const SocialButton: StyledComponent<'a', any, {}, never> = styled.a`
   }
 
   &:hover {
-    color: rgb(237, 100, 166);
+    color: ${colorPink};
   }
 
   .social-icon {
@@ -80,7 +81,7 @@ const socialData: SocialData[] = [
 const Footer = () => (
   <FooterWrapper>
     <div className='social-wrapper'>
-      {socialData.map((data) => (
+      {socialData.map((data: SocialData) => (
         <SocialButton
           key={data.id}
           target='_blank'
