@@ -20,7 +20,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|pdf)$/i,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]',
+          name: 'assets/[name].[ext]',
         },
       },
     ],

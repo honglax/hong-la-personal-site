@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
-import { FaCloudDownloadAlt } from 'react-icons/fa'
+import { IoMdCodeDownload } from 'react-icons/io'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
 import StyledBtn from '@/components/StyledButton'
@@ -54,7 +54,7 @@ const Header = () => {
         <StyledBtn hrefLink={String(resume)} isReverse={true} isDownload={true}>
           <div>
             Download Resume &nbsp;
-            <FaCloudDownloadAlt />
+            <IoMdCodeDownload size='24' />
           </div>
         </StyledBtn>
       </HeaderBtn>
