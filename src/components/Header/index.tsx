@@ -1,6 +1,5 @@
 import React from 'react'
 import { FaCloudDownloadAlt } from 'react-icons/fa'
-import styled from 'styled-components'
 import './styles.scss'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'

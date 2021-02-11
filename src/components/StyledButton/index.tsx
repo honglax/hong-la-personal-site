@@ -14,6 +14,7 @@ const StyledButton = ({ isReverse = false, hrefLink, children }: BtnProps) => {
       href={hrefLink}
       className='styled-btn--link'
       target='_blank'
+      rel='noreferrer noopener'
       title="Hong La's Blog"
     >
       <button

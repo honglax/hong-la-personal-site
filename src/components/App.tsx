@@ -9,6 +9,7 @@ import Working from '@/components/Working'
 import Education from '@/components/Education'
 import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 import HorizontalSeperator from '@/components/HorizontalSeperator'
 
 const Wrapper: StyledComponent<'div', any, {}, never> = styled.div`
@@ -18,16 +19,13 @@ const Wrapper: StyledComponent<'div', any, {}, never> = styled.div`
   width: 100%;
 `
 
-const SubWrapper = styled.div`
-  width: 1024px;
-`
-
-const pageData = [
+const pageData: (JSX.Element | JSX.Element[])[] = [
   [<Nav />, <Header />],
   <Working />,
   <Education />,
   <Skills />,
   <Contact />,
+  <Footer />,
 ]
 
 const App = () => {
@@ -38,7 +36,11 @@ const App = () => {
         {pageData.map((data, idx) => (
           <>
             <Container key={`${idx}-container`}>{data}</Container>
-            <HorizontalSeperator key={`${idx}-seperator`} />
+            {idx !== pageData.length - 1 ? (
+              <HorizontalSeperator key={`${idx}-seperator`} />
+            ) : (
+              <></>
+            )}
           </>
         ))}
       </Wrapper>
