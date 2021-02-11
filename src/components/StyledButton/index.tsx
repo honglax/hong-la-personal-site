@@ -8,6 +8,7 @@ type BtnProps = {
   isReverse?: boolean
   hrefLink: string
   children?: React.ReactNode | string | Element
+  isDownload?: boolean
 }
 
 const StyledLink = styled.a`
@@ -30,6 +31,7 @@ const Button = styled.button`
   font-size: 1rem;
   line-height: 1.5;
   cursor: pointer;
+  outline: none;
 
   & > div {
     display: flex;
@@ -53,7 +55,12 @@ const Button = styled.button`
   }
 `
 
-const StyledButton = ({ isReverse = false, hrefLink, children }: BtnProps) => {
+const StyledButton = ({
+  isReverse = false,
+  hrefLink,
+  children,
+  isDownload = false,
+}: BtnProps) => {
   const { darkMode } = useContext(ThemeContext)
 
   return (
@@ -62,6 +69,7 @@ const StyledButton = ({ isReverse = false, hrefLink, children }: BtnProps) => {
       target='_blank'
       rel='noreferrer noopener'
       title="Hong La's Blog"
+      download={isDownload}
     >
       <Button
         className={classNames(

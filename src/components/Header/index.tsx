@@ -4,6 +4,7 @@ import { FaCloudDownloadAlt } from 'react-icons/fa'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
 import StyledBtn from '@/components/StyledButton'
+import resume from '@/assets/resume/La-Xuan-Hong-Software-Engineer.pdf'
 
 const HeaderContent: StyledComponent<'div', any, {}, never> = styled.div`
   p {
@@ -50,7 +51,7 @@ const Header = () => {
       </HeaderContent>
       <HeaderBtn>
         <StyledBtn hrefLink='https://blog.hongla.dev'>Visit my blog</StyledBtn>
-        <StyledBtn hrefLink='/' isReverse={true}>
+        <StyledBtn hrefLink={String(resume)} isReverse={true} isDownload={true}>
           <div>
             Download Resume &nbsp;
             <FaCloudDownloadAlt />
