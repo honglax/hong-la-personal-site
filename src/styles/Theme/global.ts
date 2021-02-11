@@ -29,12 +29,6 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }
 
-  .container {
-    width: 100%;
-    max-width: 1024px;
-    padding: 1.125rem;
-  }
-
   p {
     text-align: justify;
     line-height: 1.5;

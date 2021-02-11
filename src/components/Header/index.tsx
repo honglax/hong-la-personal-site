@@ -1,15 +1,17 @@
 import React from 'react'
 import { FaCloudDownloadAlt } from 'react-icons/fa'
+import styled from 'styled-components'
 import './styles.scss'
+import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
 import StyledBtn from '@/components/StyledButton'
 
 const Header = () => {
   return (
-    <header>
+    <Section>
       <SectionTitle
         subTitle='Software Engineer'
-        title='WORKING AT KMS TECHNOLOGY VIET NAM - TEAM TRICENTIS FLOOD'
+        title='Working at KMS Technology Viet Nam - Team Tricentis Flood'
       />
       <div className='header-content'>
         <p>
@@ -38,7 +40,7 @@ const Header = () => {
           </div>
         </StyledBtn>
       </div>
-    </header>
+    </Section>
   )
 }
 

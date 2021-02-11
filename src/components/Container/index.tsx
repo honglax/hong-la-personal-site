@@ -1,11 +1,9 @@
-import React from 'react'
+import styled, { StyledComponent } from 'styled-components'
 
-type ContainerProps = {
-  children: React.ReactNode
-}
-
-const Container = ({ children }: ContainerProps) => (
-  <div className='container'>{children}</div>
-)
+const Container: StyledComponent<'div', any, {}, never> = styled.div`
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 1.125rem;
+`
 
 export default Container
