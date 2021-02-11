@@ -4,7 +4,11 @@ import SectionTitle from '@/components/SectionTitle'
 
 const Contact = () => (
   <Section>
-    <SectionTitle title='For more info, please contact me' subTitle='Contact' />
+    <SectionTitle
+      title='For more info, please contact me'
+      subTitle='Contact'
+      isCentered={true}
+    />
   </Section>
 )
 

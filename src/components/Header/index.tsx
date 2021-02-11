@@ -1,9 +1,27 @@
 import React from 'react'
+import styled, { StyledComponent } from 'styled-components'
 import { FaCloudDownloadAlt } from 'react-icons/fa'
-import './styles.scss'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
 import StyledBtn from '@/components/StyledButton'
+
+const HeaderContent: StyledComponent<'div', any, {}, never> = styled.div`
+  p {
+    margin-bottom: 0.6rem;
+    text-indent: 4%;
+    width: 100%;
+  }
+`
+
+const HeaderBtn: StyledComponent<'div', any, {}, never> = styled.div`
+  margin-top: 1.75rem;
+  display: flex;
+  flex-flow: row nowrap;
+
+  @media only screen and (max-width: 599px) {
+    flex-flow: column nowrap;
+  }
+`
 
 const Header = () => {
   return (
@@ -12,7 +30,7 @@ const Header = () => {
         subTitle='Software Engineer'
         title='Working at KMS Technology Viet Nam - Team Tricentis Flood'
       />
-      <div className='header-content'>
+      <HeaderContent>
         <p>
           Hi, It's me - Hong La - a normal guy who fall madly in love with cat
           🐱, cactus 🌵, and sunflower 🌻.
@@ -29,8 +47,8 @@ const Header = () => {
           my sense of humour.
         </p>
         <p>Wanna know more about me? Click these buttons below 👇</p>
-      </div>
-      <div className='header-btn'>
+      </HeaderContent>
+      <HeaderBtn>
         <StyledBtn hrefLink='https://blog.hongla.dev'>Visit my blog</StyledBtn>
         <StyledBtn hrefLink='/' isReverse={true}>
           <div>
@@ -38,7 +56,7 @@ const Header = () => {
             <FaCloudDownloadAlt />
           </div>
         </StyledBtn>
-      </div>
+      </HeaderBtn>
     </Section>
   )
 }

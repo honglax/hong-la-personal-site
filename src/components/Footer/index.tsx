@@ -95,7 +95,7 @@ const Footer = () => (
     </div>
     <FooterText>© Copyright 2021 by Hong La.</FooterText>
     <FooterText>
-      Build with ❤️ React, Typescript, and Webpack from scratch.
+      Build with ❤️ React, TypeScript, and Webpack from scratch.
     </FooterText>
   </FooterWrapper>
 )
