@@ -67,6 +67,12 @@ const Content: StyledComponent<'div', any, {}, never> = styled.div`
   text-indent: 5%;
   width: calc(100% * 2 / 3);
   padding-left: 1rem;
+  padding-top: 2rem;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
   p {
     line-height: 1.5;

@@ -1,12 +1,75 @@
 {
   "name": "Hong La",
+  "siteTitle": "Hong La - A Cat Lover",
   "header": {
-    "title": "Working at KMS Technology Viet Nam - Team Tricentis Flood",
-    "subTitle": "Software Engineer",
-    "content": "<p>Hi, It's me - Hong La - a normal guy who fall madly in love with cat 🐱, cactus 🌵, and sunflower 🌻.</p><p>I'm currently working as a Software Engineer with 1+ years of experience. Before working in the IT industry, I’ve had over 4 years of experience working in F&B as an IT Consultant and a Store Manager.</p><p>I’m strongly interested not only in JavaScript, HTML, CSS but also in many JavaScript libraries and frameworks. Moreover, I'm confident about my adaptability, soft skills, English, communication skill, and my sense of humour.</p><p>Wanna know more about me? Click these buttons below 👇</p>",
+    "title": "Software Engineer at KMS Technology Viet Nam - Team Tricentis Flood",
+    "subTitle": "A Cat Lover",
+    "content": "<p>Hi, It's me - Hong La - a normal guy who fall madly in love with cat 🐱, cactus 🌵, and sunflower 🌻.</p><p>I'm currently working as a Software Engineer at KMS Technology VN with nearly 2 years of experience. Before working in the IT industry, I’ve had over 4 years of experience working in F&B as an IT Consultant and a Store Manager.</p><p>I’m strongly interested not only in JavaScript, HTML, CSS but also in many JavaScript libraries and frameworks. Moreover, I'm confident about my adaptability, soft skills, English, communication skill, and my sense of humour.</p><p>Wanna know more about me? Click these buttons below 👇</p>",
     "button": {
       "blog": "Visit my blog",
       "resume": "Download Resume"
+    }
+  },
+  "experience": {
+    "title": "My Experience",
+    "subTitle": "All companies",
+    "items": {
+      "kmsTechnology": {
+        "title": "KMS Technology VN",
+        "subTitle": "Software Engineer",
+        "fromDate": "Oct 2019",
+        "toDate": "Present",
+        "content": "<p>Work as a Software Engineering for Tricentis Flood - a Distributed Load Testing DevOps Tools.</p><p>Implementing new Front-end features for Tricentis Flood (<a href='https://flood.io' target='_blank'>https://flood.io</a>)</p><p>Implementing new features for Flood Element - a browser-based load generation tool (<a href='https://element.flood.io' target='_blank'>https://element.flood.io</a>)</p>"
+      },
+      "appsCyclone": {
+        "title": "Apps Cyclone",
+        "subTitle": "Web Developer Internship",
+        "fromDate": "Aug 2019",
+        "toDate": "Oct 2019",
+        "content": "<p>Work as a Front-end Developer and develop web application for Apps Cyclone's client.</p>"
+      }
+    }
+  },
+  "education": {
+    "title": "My Qualification",
+    "subTitle": "Education",
+    "items": {
+      "uit": {
+        "title": "Ho Chi Minh University Of Information Technology",
+        "subTitle": "Bachelor Degree Of Software Engineering",
+        "fromDate": "Jan 2021",
+        "toDate": "Present",
+        "content": "<p>Currently studying for a Bachelor degree majoring in Software Engineering at Ho Chi Minh University of Information Technology</p>"
+      },
+      "fptPoly": {
+        "title": "FPT Polytechnic Ho Chi Minh",
+        "subTitle": "The Degree Of Associate Of Software Engineering",
+        "fromDate": "Jan 2014",
+        "toDate": "Jul 2016",
+        "content": "<p>After graduated from FPT Polytechnic HCM, with GPA “8.8”, knowledge and soft skills, I can work as a Software Engineer with good skill at HTML, CSS, and some JavaScript frameworks and libraries (ReactJS, EmberJS, Angular), or a Network Administrator, or a Test Engineer.</p><p>Otherwise, I also have knowledge about NodeJS, and data management (SQL, Oracle).</p>"
+      }
+    }
+  },
+  "skill": {
+    "title": "Technologies & Tools",
+    "subTitle": "Skills"
+  },
+  "contact": {
+    "title": "For more info, please contact me",
+    "subTitle": "Contact",
+    "items": {
+      "phone": {
+        "title": "Phone",
+        "content": "<a href='tel:+84989110991'>(+84) 989.11.09.91</a>"
+      },
+      "address": {
+        "title": "Address",
+        "content": "<span>02 Tan Vien, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam</span>"
+      },
+      "email": {
+        "title": "Email",
+        "content": "<a href='mailto:hongla.html@gmail.com'>hongla.html@gmail.com</a>"
+      }
     }
   }
 }

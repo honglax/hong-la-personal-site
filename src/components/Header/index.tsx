@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import { IoMdCodeDownload } from 'react-icons/io'
-import { useTranslation } from 'react-i18next'
+import { Translation } from 'react-i18next'
 import parse from 'html-react-parser'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
@@ -27,26 +26,33 @@ const HeaderBtn: StyledComponent<'div', any, {}, never> = styled.div`
   }
 `
 
-const Header = () => {
-  const { t } = useTranslation('translation')
-
-  return (
-    <Section>
-      <SectionTitle subTitle={t('header.subTitle')} title={t('header.title')} />
-      <HeaderContent>{parse(t('header.content'))}</HeaderContent>
-      <HeaderBtn>
-        <StyledBtn hrefLink='https://blog.hongla.dev'>
-          {t('header.button.blog')}
-        </StyledBtn>
-        <StyledBtn hrefLink={String(resume)} isReverse={true} isDownload={true}>
-          <div>
-            {t('header.button.resume')} &nbsp;
-            <IoMdCodeDownload size='24' />
-          </div>
-        </StyledBtn>
-      </HeaderBtn>
-    </Section>
-  )
-}
+const Header = () => (
+  <Translation>
+    {(t) => (
+      <Section>
+        <SectionTitle
+          subTitle={t('header.subTitle')}
+          title={t('header.title')}
+        />
+        <HeaderContent>{parse(t('header.content'))}</HeaderContent>
+        <HeaderBtn>
+          <StyledBtn hrefLink='https://blog.hongla.dev'>
+            {t('header.button.blog')}
+          </StyledBtn>
+          <StyledBtn
+            hrefLink={String(resume)}
+            isReverse={true}
+            isDownload={true}
+          >
+            <div>
+              {t('header.button.resume')} &nbsp;
+              <IoMdCodeDownload size='24' />
+            </div>
+          </StyledBtn>
+        </HeaderBtn>
+      </Section>
+    )}
+  </Translation>
+)
 
 export default Header

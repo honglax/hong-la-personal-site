@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import { FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
+import { Translation } from 'react-i18next'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
 import InfoBlock, { InfoProps } from '@/components/InfoBlock'
@@ -16,46 +17,43 @@ const ContactWrapper: StyledComponent<'div', any, {}, never> = styled.div`
   }
 `
 
-const contactData: InfoProps[] = [
+const contactData: Partial<InfoProps>[] = [
   {
-    id: 1,
-    title: 'Phone',
-    content: '<a href="tel:+84989110991">(+84) 989.11.09.91</a>',
+    id: 'phone',
     icon: <FaPhone />,
   },
   {
-    id: 2,
-    title: 'Address',
-    content:
-      '<span>02 Tan Vien, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam</span>',
+    id: 'address',
     icon: <FaMapMarkerAlt />,
   },
   {
-    id: 3,
-    title: 'Email',
-    content: '<a href="mailto:hongla.html@gmail.com">hongla.html@gmail.com</a>',
+    id: 'email',
     icon: <FaPaperPlane />,
   },
 ]
 
 const Contact = () => (
-  <Section>
-    <SectionTitle
-      title='For more info, please contact me'
-      subTitle='Contact'
-      isCentered={true}
-    />
-    <ContactWrapper>
-      {contactData.map(({ id, title, content, icon }: InfoProps) => (
-        <InfoBlock
-          key={id}
-          icon={icon}
-          title={title}
-          content={content}
-        ></InfoBlock>
-      ))}
-    </ContactWrapper>
-  </Section>
+  <Translation>
+    {(t) => (
+      <Section>
+        <SectionTitle
+          title={t('contact.title')}
+          subTitle={t('contact.subTitle')}
+          isCentered={true}
+        />
+        <ContactWrapper>
+          {contactData.map(({ id, icon }: Partial<InfoProps>) => (
+            <InfoBlock
+              key={id}
+              icon={icon ?? <></>}
+              title={t(`contact.items.${id}.title`)}
+              content={t(`contact.items.${id}.content`)}
+            ></InfoBlock>
+          ))}
+        </ContactWrapper>
+      </Section>
+    )}
+  </Translation>
 )
 
 export default Contact

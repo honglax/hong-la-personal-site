@@ -1,49 +1,43 @@
 import React from 'react'
+import { Translation } from 'react-i18next'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
-import Timeline, { ITimelineProps } from '@/components/Timeline'
+import Timeline from '@/components/Timeline'
 
-interface IExperience extends ITimelineProps {
-  id: number
+interface IExperience {
+  id: string
 }
 
 const expericenes: IExperience[] = [
   {
-    id: 1,
-    title: 'KMS Technology',
-    subTitle: 'Software Engineer',
-    fromDate: 'Oct 2019',
-    toDate: 'Present',
-    content: `<p>Work as a Software Engineering for Tricentis Flood - a Distributed Load Testing DevOps Tools.</p>
-    <p>Implementing new Front-end features for Tricentis Flood (https://flood.io)</p>
-    <p>Implementing new features for Flood Element - a browser-based load generation tool (https://element.flood.io)</p>`,
+    id: 'kmsTechnology',
   },
   {
-    id: 2,
-    title: 'Apps Cyclone',
-    subTitle: 'Web Developer Internship',
-    fromDate: 'Aug 2019',
-    toDate: 'Oct 2019',
-    content: `<p>Work as a Front-end Developer and develop web application for Apps Cyclone's client.</p>`,
+    id: 'appsCyclone',
   },
 ]
 
 const Expericene = () => (
-  <Section>
-    <SectionTitle title='My experience' subTitle='All companies' />
-    {expericenes.map(
-      ({ id, title, subTitle, fromDate, toDate, content }: IExperience) => (
-        <Timeline
-          key={id}
-          title={title}
-          subTitle={subTitle}
-          fromDate={fromDate}
-          toDate={toDate}
-          content={content}
+  <Translation>
+    {(t) => (
+      <Section>
+        <SectionTitle
+          title={t('experience.title')}
+          subTitle={t('experience.subTitle')}
         />
-      )
+        {expericenes.map(({ id }: IExperience) => (
+          <Timeline
+            key={id}
+            title={t(`experience.items.${id}.title`)}
+            subTitle={t(`experience.items.${id}.subTitle`)}
+            fromDate={t(`experience.items.${id}.fromDate`)}
+            toDate={t(`experience.items.${id}.toDate`)}
+            content={t(`experience.items.${id}.content`)}
+          />
+        ))}
+      </Section>
     )}
-  </Section>
+  </Translation>
 )
 
 export default Expericene

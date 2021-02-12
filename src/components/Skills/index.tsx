@@ -1,5 +1,6 @@
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
+import { Translation } from 'react-i18next'
 import Section from '@/components/Section'
 import SectionTitle from '@/components/SectionTitle'
 import ProgressBar from '@/components/ProgressBar'
@@ -70,24 +71,28 @@ const skills: Skill[] = [
 ]
 
 const Skill = () => (
-  <Section>
-    <SectionTitle
-      title='Technologies & Tools'
-      subTitle='Skills'
-      isCentered={true}
-    />
-    <SkillsWrapper>
-      {skills.map(({ id, name, progress }: Skill) => (
-        <ProgressBarWrapper key={`${id}-wrapper`}>
-          <ProgressBar
-            key={`${id}-progress-bar`}
-            name={name}
-            progress={progress}
-          />
-        </ProgressBarWrapper>
-      ))}
-    </SkillsWrapper>
-  </Section>
+  <Translation>
+    {(t) => (
+      <Section>
+        <SectionTitle
+          title={t('skill.title')}
+          subTitle={t('skill.subTitle')}
+          isCentered={true}
+        />
+        <SkillsWrapper>
+          {skills.map(({ id, name, progress }: Skill) => (
+            <ProgressBarWrapper key={`${id}-wrapper`}>
+              <ProgressBar
+                key={`${id}-progress-bar`}
+                name={name}
+                progress={progress}
+              />
+            </ProgressBarWrapper>
+          ))}
+        </SkillsWrapper>
+      </Section>
+    )}
+  </Translation>
 )
 
 export default Skill

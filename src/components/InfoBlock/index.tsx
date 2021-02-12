@@ -6,7 +6,7 @@ import { ThemeContext } from '@/context'
 import { IconType } from 'react-icons'
 
 export type InfoProps = {
-  id?: number
+  id?: string
   title: string
   icon: JSX.Element | IconType
   content: string

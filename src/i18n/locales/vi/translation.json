@@ -1,12 +1,75 @@
 {
   "name": "Lã Xuân Hồng",
+  "siteTitle": "Hồng Lã - Một người yêu mèo",
   "header": {
-    "title": "Làm việc tại công ty KMS Technology Việt Nam - Team Tricentis Flood",
-    "subTitle": "Kỹ sư phần mềm",
-    "content": "<p>Hi, It's me - Hong La - a normal guy who fall madly in love with cat 🐱, cactus 🌵, and sunflower 🌻.</p><p>I'm currently working as a Software Engineer with 1+ years of experience. Before working in the IT industry, I’ve had over 4 years of experience working in F&B as an IT Consultant and a Store Manager.</p><p>I’m strongly interested not only in JavaScript, HTML, CSS but also in many JavaScript libraries and frameworks. Moreover, I'm confident about my adaptability, soft skills, English, communication skill, and my sense of humour.</p><p>Wanna know more about me? Click these buttons below 👇</p>",
+    "title": "Kỹ sư phần mềm tại công ty KMS Technology Việt Nam - Team Tricentis Flood",
+    "subTitle": "Một người yêu mèo",
+    "content": "<p>Xin chào, là mình, Lã Xuân Hồng đây - một chàng trai bình thường nhưng có tình yêu mãnh liệt với các bé mèo 🐱, xương rồng mạnh mẽ 🌵, và những bông hoa hướng dương 🌻.</p><p>Mình hiện đang làm Kỹ sư phần mềm tại KMS Technology VN với gần 2 năm kinh nghiệm. Trước khi làm việc trong lĩnh vực phần mềm, mình đã có hơn 4 năm kinh nghiệm làm việc trong môi trường dịch vụ F&B với vai trò là một người tư vấn về IT cũng như là Cửa hàng trưởng.</p><p>Mình cực kỳ yêu thích làm việc với HTML, CSS, JavaScript. Đồng thời mình còn có hứng thú với các thư viện cũng như framework của JavaScript. Hơn thế nữa, mình cực kỳ tự tin vào khả năng thích ứng của bản thân, cũng như các kỹ năng mềm, kỹ năng Anh ngữ, kỹ năng giao tiếp, cùng với óc hài hước của bản thân.</p><p>Bạn muốn hiểu thêm về mình? Thử nhấn vào một trong hai nút bên dưới để biết nhé 👇</p>",
     "button": {
       "blog": "Ghé thăm blog của mình",
       "resume": "Tải xuống CV"
+    }
+  },
+  "experience": {
+    "title": "Kinh nghiệm",
+    "subTitle": "Các công ty đã và đang làm việc",
+    "items": {
+      "kmsTechnology": {
+        "title": "KMS Technology VN",
+        "subTitle": "Kỹ sư phần mềm",
+        "fromDate": "10/2019",
+        "toDate": "Hiện tại",
+        "content": "<p>Work as a Software Engineering for Tricentis Flood - a Distributed Load Testing DevOps Tools.</p><p>Implementing new Front-end features for Tricentis Flood (https://flood.io)</p><p>Implementing new features for Flood Element - a browser-based load generation tool (https://element.flood.io)</p>"
+      },
+      "appsCyclone": {
+        "title": "Apps Cyclone",
+        "subTitle": "Thực tập sinh lập trình Website",
+        "fromDate": "08/2019",
+        "toDate": "10/2019",
+        "content": "<p>Làm việc với vai trò Lập trình viên Front-end và phát triển các ứng dụng web cho khách hàng của Apps Cylone</p>"
+      }
+    }
+  },
+  "education": {
+    "title": "Học vấn và bằng cấp",
+    "subTitle": "Học vấn",
+    "items": {
+      "uit": {
+        "title": "Đại học Công Nghệ Thông Tin HCM",
+        "subTitle": "Cử nhân Kỹ thuật phần mềm",
+        "fromDate": "01/2021",
+        "toDate": "Hiện tại",
+        "content": "<p>Hiện đang theo học tại Đại học Công Nghệ Thông Tin Tp.Hồ Chí Minh - Chuyên ngành Kỹ thuật phần mềm.</p>"
+      },
+      "fptPoly": {
+        "title": "Cao đẳng thực hành FPT Polytechnic HCM",
+        "subTitle": "Cử nhân thực hành Ứng dụng phần mềm",
+        "fromDate": "01/2014",
+        "toDate": "06/2016",
+        "content": "<p>After graduated from FPT Polytechnic HCM, with GPA “8.8”, knowledge and soft skills, I can work as a Software Engineer with good skill at HTML, CSS, and some JavaScript frameworks and libraries (ReactJS, EmberJS, Angular), or a Network Administrator, or a Test Engineer.</p><p>Otherwise, I also have knowledge about NodeJS, and data management (SQL, Oracle).</p>"
+      }
+    }
+  },
+  "skill": {
+    "title": "Các công nghệ & công cụ lập trình",
+    "subTitle": "Kỹ năng"
+  },
+  "contact": {
+    "title": "Kết nối với mình qua các phương thức sau",
+    "subTitle": "Liên hệ",
+    "items": {
+      "phone": {
+        "title": "Điện thoại",
+        "content": "<a href='tel:+84989110991'>(+84) 989.11.09.91</a>"
+      },
+      "address": {
+        "title": "Địa chỉ",
+        "content": "<span>02 Tản Viên, Phường 2, Quận Tân Bình, TP.Hồ Chí Minh, Việt Nam</span>"
+      },
+      "email": {
+        "title": "Email",
+        "content": "<a href='mailto:hongla.html@gmail.com'>hongla.html@gmail.com</a>"
+      }
     }
   }
 }

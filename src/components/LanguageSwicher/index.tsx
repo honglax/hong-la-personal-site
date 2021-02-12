@@ -58,7 +58,6 @@ const languages: Language[] = [
 
 const LanguageSwicher = () => {
   const { i18n } = useTranslation()
-
   const changeLanguage = (lng: string) => i18n.changeLanguage(lng)
 
   return (

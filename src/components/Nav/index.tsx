@@ -1,11 +1,11 @@
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
+import { Translation } from 'react-i18next'
 import ProfileImage from '@/components/ProfileImage'
 import profileImg from '@/assets/images/profile.jpg'
 import ThemeSwitcher from '@/components/ThemeSwitcher'
 import LanguageSwicher from '@/components/LanguageSwicher'
 import { colorPink } from '@/constant'
-import { useTranslation } from 'react-i18next'
 
 const Navigation: StyledComponent<'div', any, {}, never> = styled.div`
   display: flex;
@@ -38,23 +38,24 @@ const Navigation: StyledComponent<'div', any, {}, never> = styled.div`
   }
 `
 
-const Nav = () => {
-  const { t } = useTranslation()
-  return (
-    <Navigation>
-      <div className='left-nav'>
-        <ProfileImage
-          imageURL={String(profileImg)}
-          siteTitle='Hong La - A Cat Lover'
-        />
-        <h1>{t('name')}</h1>
-      </div>
-      <div className='right-nav'>
-        <LanguageSwicher />
-        <ThemeSwitcher />
-      </div>
-    </Navigation>
-  )
-}
+const Nav = () => (
+  <Translation>
+    {(t) => (
+      <Navigation>
+        <div className='left-nav'>
+          <ProfileImage
+            imageURL={String(profileImg)}
+            siteTitle={t('siteTitle')}
+          />
+          <h1>{t('name')}</h1>
+        </div>
+        <div className='right-nav'>
+          <LanguageSwicher />
+          <ThemeSwitcher />
+        </div>
+      </Navigation>
+    )}
+  </Translation>
+)
 
 export default Nav
