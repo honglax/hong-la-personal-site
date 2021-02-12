@@ -32,10 +32,7 @@ const Header = () => {
 
   return (
     <Section>
-      <SectionTitle
-        subTitle='Software Engineer'
-        title='Working at KMS Technology Viet Nam - Team Tricentis Flood'
-      />
+      <SectionTitle subTitle={t('header.subTitle')} title={t('header.title')} />
       <HeaderContent>{parse(t('header.content'))}</HeaderContent>
       <HeaderBtn>
         <StyledBtn hrefLink='https://blog.hongla.dev'>

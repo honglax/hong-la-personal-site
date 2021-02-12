@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "country-flag-icons": "^1.2.8",
     "html-react-parser": "^1.2.4",
     "i18next": "^19.8.7",
     "react": "^17.0.1",
