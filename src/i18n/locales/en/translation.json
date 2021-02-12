@@ -71,5 +71,9 @@
         "content": "<a href='mailto:hongla.html@gmail.com'>hongla.html@gmail.com</a>"
       }
     }
+  },
+  "footer": {
+    "copyright": "Copyright 2021 by Hong La.",
+    "content": "Build with ❤️ React, TypeScript, and Webpack from scratch."
   }
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import { IconType } from 'react-icons'
 import { FaCat, FaGithub, FaLinkedin } from 'react-icons/fa'
 import styled, { StyledComponent } from 'styled-components'
+import { Translation } from 'react-i18next'
 import { colorPink } from '@/constant'
 
 type SocialData = {
@@ -55,6 +56,10 @@ const SocialButton: StyledComponent<'a', any, {}, never> = styled.a`
 const FooterText: StyledComponent<'p', any, {}, never> = styled.p`
   text-align: center;
   line-height: 1.5;
+
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 `
 
 const socialData: SocialData[] = [
@@ -79,26 +84,28 @@ const socialData: SocialData[] = [
 ]
 
 const Footer = () => (
-  <FooterWrapper>
-    <div className='social-wrapper'>
-      {socialData.map((data: SocialData) => (
-        <SocialButton
-          key={data.id}
-          target='_blank'
-          rel='noreferrer noopener'
-          title={data.name}
-          href={data.href}
-        >
-          <data.icon className='social-icon' />
-          <span>{data.name}</span>
-        </SocialButton>
-      ))}
-    </div>
-    <FooterText>© Copyright 2021 by Hong La.</FooterText>
-    <FooterText>
-      Build with ❤️ React, TypeScript, and Webpack from scratch.
-    </FooterText>
-  </FooterWrapper>
+  <Translation>
+    {(t) => (
+      <FooterWrapper>
+        <div className='social-wrapper'>
+          {socialData.map((data: SocialData) => (
+            <SocialButton
+              key={data.id}
+              target='_blank'
+              rel='noreferrer noopener'
+              title={data.name}
+              href={data.href}
+            >
+              <data.icon className='social-icon' />
+              <span>{data.name}</span>
+            </SocialButton>
+          ))}
+        </div>
+        <FooterText>© {t('footer.copyright')}</FooterText>
+        <FooterText>{t('footer.content')}</FooterText>
+      </FooterWrapper>
+    )}
+  </Translation>
 )
 
 export default Footer

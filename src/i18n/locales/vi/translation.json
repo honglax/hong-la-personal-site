@@ -71,5 +71,9 @@
         "content": "<a href='mailto:hongla.html@gmail.com'>hongla.html@gmail.com</a>"
       }
     }
+  },
+  "footer": {
+    "copyright": "Bản quyền 2021 bởi Lã Xuân Hồng.",
+    "content": "Website được tạo ra với ❤️ dành cho React, TypeScript, và Webpack."
   }
 }
