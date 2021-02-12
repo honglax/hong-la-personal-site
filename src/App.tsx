@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import styled, { StyledComponent } from 'styled-components'
+import Helmet from 'react-helmet'
+import { Translation } from 'react-i18next'
 import { ThemeContext } from '@/context/'
 import Container from '@/components/Container'
 import Nav from '@/components/Nav'
@@ -32,6 +34,18 @@ const App = () => {
   const { darkMode } = useContext(ThemeContext)
   return (
     <Router>
+      <Translation>
+        {(t) => (
+          <Helmet>
+            <title>{t('siteTitle')}</title>
+            <meta name='description' content={t('siteMetaContent')} />
+            <link
+              href='https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap'
+              rel='stylesheet'
+            />
+          </Helmet>
+        )}
+      </Translation>
       <Wrapper className={darkMode ? 'dark' : 'light'}>
         {pageData.map((data, idx) => (
           <>

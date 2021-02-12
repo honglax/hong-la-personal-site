@@ -1,6 +1,7 @@
 {
   "name": "Hong La",
   "siteTitle": "Hong La - A Cat Lover",
+  "siteMetaContent": "Hong La - Just a normal guy who fall madly in love with cat 🐱, cactus 🌵, and sunflower 🌻",
   "header": {
     "title": "Software Engineer at KMS Technology Viet Nam - Team Tricentis Flood",
     "subTitle": "A Cat Lover",
@@ -19,7 +20,7 @@
         "subTitle": "Software Engineer",
         "fromDate": "Oct 2019",
         "toDate": "Present",
-        "content": "<p>Work as a Software Engineering for Tricentis Flood - a Distributed Load Testing DevOps Tools.</p><p>Implementing new Front-end features for Tricentis Flood (<a href='https://flood.io' target='_blank'>https://flood.io</a>)</p><p>Implementing new features for Flood Element - a browser-based load generation tool (<a href='https://element.flood.io' target='_blank'>https://element.flood.io</a>)</p>"
+        "content": "<p>Work as a Software Engineering for Tricentis Flood - a Distributed Load Testing DevOps Tools.</p><p>Implementing new Front-end features for Tricentis Flood (<a href='https://flood.io' target='_blank' rel='noreferrer noopener'>https://flood.io</a>)</p><p>Implementing new features for Flood Element - a browser-based load generation tool (<a href='https://element.flood.io' target='_blank' rel='noreferrer noopener'>https://element.flood.io</a>)</p>"
       },
       "appsCyclone": {
         "title": "Apps Cyclone",
@@ -60,7 +61,7 @@
     "items": {
       "phone": {
         "title": "Phone",
-        "content": "<a href='tel:+84989110991'>(+84) 989.11.09.91</a>"
+        "content": "<a href='tel:+84989110991' rel='noopener noreferrer'>(+84) 989.11.09.91</a>"
       },
       "address": {
         "title": "Address",
@@ -68,7 +69,7 @@
       },
       "email": {
         "title": "Email",
-        "content": "<a href='mailto:hongla.html@gmail.com'>hongla.html@gmail.com</a>"
+        "content": "<a href='mailto:hongla.html@gmail.com' rel='noopener noreferrer'>hongla.html@gmail.com</a>"
       }
     }
   },

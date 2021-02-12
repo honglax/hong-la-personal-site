@@ -1,6 +1,7 @@
 {
   "name": "Lã Xuân Hồng",
-  "siteTitle": "Hồng Lã - Một người yêu mèo",
+  "siteTitle": "Hồng Lã - Phát cuồng vì mèo",
+  "siteMetaContent": "Lã Xuân Hồng - Chỉ là một chàng trai bình thường nhưng có tình yêu mãnh liệt với các bé mèo 🐱, xương rồng mạnh mẽ 🌵, và những bông hoa hướng dương 🌻",
   "header": {
     "title": "Kỹ sư phần mềm tại công ty KMS Technology Việt Nam - Team Tricentis Flood",
     "subTitle": "Một người yêu mèo",
@@ -19,7 +20,7 @@
         "subTitle": "Kỹ sư phần mềm",
         "fromDate": "10/2019",
         "toDate": "Hiện tại",
-        "content": "<p>Làm việc trực tiếp với khách hàng là Tricentis Flood - một tool DevOps kiểm thử tốc độ load của website.</p><p>Triển khai và thực hiện các tính năng Front-end mới cũng như bảo trì các tính năng hiện tại cho Dashboard FloodIO (https://flood.io)</p><p>Triển khai và thực hiện các tính năng mới cho Flood Element - một công cụ kiểm thử tự động với trình duyệt (https://element.flood.io)</p>"
+        "content": "<p>Làm việc trực tiếp với khách hàng là Tricentis Flood - một tool DevOps kiểm thử tốc độ load của website.</p><p>Triển khai và thực hiện các tính năng Front-end mới cũng như bảo trì các tính năng hiện tại cho Dashboard FloodIO (<a href='https://flood.io' target='_blank' rel='noreferrer noopener'>https://flood.io</a>)</p><p>Triển khai và thực hiện các tính năng mới cho Flood Element - một công cụ kiểm thử tự động với trình duyệt (<a href='https://element.flood.io' target='_blank' rel='noreferrer noopener'>https://element.flood.io</a>)</p>"
       },
       "appsCyclone": {
         "title": "Apps Cyclone",
@@ -60,7 +61,7 @@
     "items": {
       "phone": {
         "title": "Điện thoại",
-        "content": "<a href='tel:+84989110991'>(+84) 989.11.09.91</a>"
+        "content": "<a href='tel:+84989110991' rel='noopener noreferrer'>(+84) 989.11.09.91</a>"
       },
       "address": {
         "title": "Địa chỉ",
@@ -68,7 +69,7 @@
       },
       "email": {
         "title": "Email",
-        "content": "<a href='mailto:hongla.html@gmail.com'>hongla.html@gmail.com</a>"
+        "content": "<a href='mailto:hongla.html@gmail.com' rel='noopener noreferrer'>hongla.html@gmail.com</a>"
       }
     }
   },
