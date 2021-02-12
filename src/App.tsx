@@ -5,7 +5,7 @@ import { ThemeContext } from '@/context/'
 import Container from '@/components/Container'
 import Nav from '@/components/Nav'
 import Header from '@/components/Header'
-import Working from '@/components/Working'
+import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
@@ -21,7 +21,7 @@ const Wrapper: StyledComponent<'div', any, {}, never> = styled.div`
 
 const pageData: (JSX.Element | JSX.Element[])[] = [
   [<Nav />, <Header />],
-  <Working />,
+  <Experience />,
   <Education />,
   <Skills />,
   <Contact />,
