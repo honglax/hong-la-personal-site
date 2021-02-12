@@ -74,7 +74,7 @@
   resolved "https://registry.yarnpkg.com/@babel/parser/-/parser-7.12.15.tgz#2b20de7f0b4b332d9b119dd9c33409c538b8aacf"
   integrity sha512-AQBOU2Z9kWwSZMd6lNjCX0GUgFonL1wAM1db8L8PMk9UDaGsRCArBkU4Sc+UCM3AE4hjbXx+h58Lb3QT4oRmrA==
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.1":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.3.1":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.13.tgz#0a21452352b02542db0ffb928ac2d3ca7cb6d66d"
   integrity sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
@@ -224,6 +224,13 @@
   integrity sha512-lUqY7OlkF/RbNtD5nIq7ot8NquXrdFrjSOR6+w9a9RFQevGi1oZO1dcJbXMeONAPKtZ2UrZOEJ5UOCVsxbLk/g==
   dependencies:
     "@types/react" "*"
+
+"@types/react-i18next@^8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-i18next/-/react-i18next-8.1.0.tgz#5faacbfe7dc0f24729c1df6914610bfe861a50de"
+  integrity sha512-d4xhcjX5b3roNMObRNMfb1HinHQlQLPo8xlDj60dnHeeAw2bBymR2cy/l1giJpHzo/ZFgSvgVUvIWr4kCrenCg==
+  dependencies:
+    react-i18next "*"
 
 "@types/react-router-dom@^5.1.7":
   version "5.1.7"
@@ -1780,6 +1787,13 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
+html-parse-stringify2@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/html-parse-stringify2/-/html-parse-stringify2-2.0.1.tgz#dc5670b7292ca158b7bc916c9a6735ac8872834a"
+  integrity sha1-3FZwtyksoVi3vJFsmmc1rIhyg0o=
+  dependencies:
+    void-elements "^2.0.1"
+
 html-react-parser@^1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-1.2.4.tgz#812ed948722a29da641e1662a9b6eaec80f8d5de"
@@ -1888,6 +1902,13 @@ human-signals@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-2.1.0.tgz#dc91fcba42e4d06e4abaed33b3e7a3c02f514ea0"
   integrity sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==
+
+i18next@^19.8.7:
+  version "19.8.7"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-19.8.7.tgz#ef023e353974d1b1453e8b6331bd9fb7cba427df"
+  integrity sha512-ezo1gb7QO4OQ5gQCdZMUxopwQSoqpRp6whdEjm1grxMSmkGj1NJ+kYS0UQd4NnpPIVqsgqTQ2L2eqSQYQ+U3Fw==
+  dependencies:
+    "@babel/runtime" "^7.12.0"
 
 iconv-lite@0.4.24:
   version "0.4.24"
@@ -2947,6 +2968,14 @@ react-dom@^17.0.1:
     object-assign "^4.1.1"
     scheduler "^0.20.1"
 
+react-i18next@*, react-i18next@^11.8.6:
+  version "11.8.6"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-11.8.6.tgz#f9a09964fb38407247ae9542fe51741b6fb93d1a"
+  integrity sha512-Nr4Fq7BvzDLJQmaDyJRkPPINgMW1Y1qeT4STBoY/ePGmYlCZGShTYqqyBm0ly6M8dV1X0twt7M5dfmDzfi9yGQ==
+  dependencies:
+    "@babel/runtime" "^7.3.1"
+    html-parse-stringify2 "2.0.1"
+
 react-icons@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-4.2.0.tgz#6dda80c8a8f338ff96a1851424d63083282630d0"
@@ -3841,6 +3870,11 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+void-elements@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
+  integrity sha1-wGavtYK7HLQSjWDqkjkulNXp2+w=
 
 watchpack@^2.0.0:
   version "2.1.1"
