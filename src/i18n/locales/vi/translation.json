@@ -19,7 +19,7 @@
         "subTitle": "Kỹ sư phần mềm",
         "fromDate": "10/2019",
         "toDate": "Hiện tại",
-        "content": "<p>Work as a Software Engineering for Tricentis Flood - a Distributed Load Testing DevOps Tools.</p><p>Implementing new Front-end features for Tricentis Flood (https://flood.io)</p><p>Implementing new features for Flood Element - a browser-based load generation tool (https://element.flood.io)</p>"
+        "content": "<p>Làm việc trực tiếp với khách hàng là Tricentis Flood - một tool DevOps kiểm thử tốc độ load của website.</p><p>Triển khai và thực hiện các tính năng Front-end mới cũng như bảo trì các tính năng hiện tại cho Dashboard FloodIO (https://flood.io)</p><p>Triển khai và thực hiện các tính năng mới cho Flood Element - một công cụ kiểm thử tự động với trình duyệt (https://element.flood.io)</p>"
       },
       "appsCyclone": {
         "title": "Apps Cyclone",
@@ -46,12 +46,12 @@
         "subTitle": "Cử nhân thực hành Ứng dụng phần mềm",
         "fromDate": "01/2014",
         "toDate": "06/2016",
-        "content": "<p>After graduated from FPT Polytechnic HCM, with GPA “8.8”, knowledge and soft skills, I can work as a Software Engineer with good skill at HTML, CSS, and some JavaScript frameworks and libraries (ReactJS, EmberJS, Angular), or a Network Administrator, or a Test Engineer.</p><p>Otherwise, I also have knowledge about NodeJS, and data management (SQL, Oracle).</p>"
+        "content": "<p>Tốt nghiệp Cao đẳng thực hành FPT Polytechnic loại Giỏi cùng với GPA là '8.8', mình tự tin với những kiến thức lập trình cùng với việc nắm vững JavaScript, TypeScript cùng với các thư viện và framework của nó (ReactJS, EmberJS, Angular). Song song với đó là các ngôn ngữ đánh dấu (markup language) như HTML, và CSS.</p><p>Bên cạnh việc có khả năng làm việc theo hướng lập trình Front-end, mình còn củng cố được các kiến thức về ngôn ngữ lập trình phía Back-end là NodeJS, các kiến thức về Quản trị mạng, Thiết kế hệ thống mạng, Kiểm thử phần mềm, và hệ quản trị cơ sở dữ liệu (mySQL, SQL Server, Orcale).</p>"
       }
     }
   },
   "skill": {
-    "title": "Các công nghệ & công cụ lập trình",
+    "title": "Các công nghệ sử dụng & kỹ năng mềm",
     "subTitle": "Kỹ năng"
   },
   "contact": {

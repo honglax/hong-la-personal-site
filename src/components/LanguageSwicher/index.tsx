@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import vnFlag from '@/assets/images/vietnam.svg'
@@ -8,7 +8,7 @@ type Language = {
   id: number
   imgURL: any
   alt: string
-  lang: string
+  lng: string
 }
 
 const BlockWrapper: StyledComponent<'div', any, {}, never> = styled.div`
@@ -16,8 +16,8 @@ const BlockWrapper: StyledComponent<'div', any, {}, never> = styled.div`
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  min-width: 5rem;
-  padding-right: 2rem;
+  min-width: 2rem;
+  padding-right: 1rem;
 
   @media only screen and (max-width: 639px) {
     padding-right: 0;
@@ -46,27 +46,39 @@ const languages: Language[] = [
     id: 1,
     imgURL: vnFlag,
     alt: 'Viet Nam',
-    lang: 'vi-VN',
+    lng: 'vi',
   },
   {
     id: 2,
     imgURL: usaFlag,
     alt: 'The United States of America',
-    lang: 'en-US',
+    lng: 'en',
   },
 ]
 
 const LanguageSwicher = () => {
+  const [currentLanguage, setCurrentLanguage] = useState('')
   const { i18n } = useTranslation()
-  const changeLanguage = (lng: string) => i18n.changeLanguage(lng)
+
+  useEffect(() => {
+    setCurrentLanguage(i18n.language)
+  }, [])
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng)
+    setCurrentLanguage(lng === 'en' ? 'en' : 'vi')
+  }
 
   return (
     <BlockWrapper>
-      {languages.map(({ id, imgURL, alt, lang }: Language) => (
-        <BtnSwitcher key={id} onClick={() => changeLanguage(lang)}>
-          <img src={imgURL} alt={alt} />
-        </BtnSwitcher>
-      ))}
+      {languages.map(
+        ({ id, imgURL, alt, lng }: Language) =>
+          lng !== currentLanguage && (
+            <BtnSwitcher key={id} onClick={() => changeLanguage(lng)}>
+              <img src={imgURL} alt={alt} />
+            </BtnSwitcher>
+          )
+      )}
     </BlockWrapper>
   )
 }

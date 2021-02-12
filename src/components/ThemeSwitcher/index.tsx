@@ -9,7 +9,7 @@ const DarkSwitcher: StyledComponent<'button', any, {}, never> = styled.button`
   border: none;
   cursor: pointer;
   outline: none;
-  font-size: 2em;
+  display: flex;
 
   &:focus {
     outline: none;
@@ -26,9 +26,9 @@ const ThemeSwitcher = () => {
   return (
     <DarkSwitcher className='dark-switcher' onClick={toggleDarkMode}>
       {darkMode ? (
-        <FaSun className='dark-switcher__icon' />
+        <FaSun className='dark-switcher__icon' size='2rem' />
       ) : (
-        <FaCloudMoon className='dark-switcher__icon' />
+        <FaCloudMoon className='dark-switcher__icon' size='2rem' />
       )}
     </DarkSwitcher>
   )
