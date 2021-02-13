@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import { Translation } from 'react-i18next'
@@ -40,16 +41,16 @@ const Navigation: StyledComponent<'div', any, {}, never> = styled.div`
 
 const Nav = () => (
   <Translation>
-    {(t) => (
+    {t => (
       <Navigation>
-        <div className='left-nav'>
+        <div className="left-nav">
           <ProfileImage
             imageURL={String(profileImg)}
             siteTitle={t('siteTitle')}
           />
           <h1>{t('name')}</h1>
         </div>
-        <div className='right-nav'>
+        <div className="right-nav">
           <LanguageSwicher />
           <ThemeSwitcher />
         </div>

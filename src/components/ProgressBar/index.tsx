@@ -35,7 +35,7 @@ const BarWrapper: StyledComponent<'div', any, {}, never> = styled.div`
 
 const Bar: StyledComponent<'div', any, BarProps, never> = styled.div<BarProps>`
   background-color: ${colorPink};
-  width: ${(props) => props.progress}%;
+  width: ${props => props.progress}%;
   height: 100%;
 `
 

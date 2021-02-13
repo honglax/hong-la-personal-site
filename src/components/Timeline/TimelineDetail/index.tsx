@@ -36,7 +36,7 @@ const TimelineDetail = ({
   fromDate,
   toDate,
   title,
-  subTitle,
+  subTitle
 }: TimelineDetailProps) => (
   <>
     <Date>

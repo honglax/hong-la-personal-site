@@ -1,6 +1,7 @@
+// @ts-nocheck
 import React from 'react'
 import { Translation } from 'react-i18next'
-import Section from '@/components/Section'
+import Section from '@/layouts/Section'
 import SectionTitle from '@/components/SectionTitle'
 import Timeline from '@/components/Timeline'
 
@@ -10,16 +11,16 @@ interface IExperience {
 
 const expericenes: IExperience[] = [
   {
-    id: 'kmsTechnology',
+    id: 'kmsTechnology'
   },
   {
-    id: 'appsCyclone',
-  },
+    id: 'appsCyclone'
+  }
 ]
 
 const Expericene = () => (
   <Translation>
-    {(t) => (
+    {t => (
       <Section>
         <SectionTitle
           title={t('experience.title')}

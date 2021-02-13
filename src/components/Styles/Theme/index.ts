@@ -7,10 +7,10 @@ export interface ITheme {
 
 export const lightTheme: ITheme = {
   body: lightBg,
-  text: lightTextColor,
+  text: lightTextColor
 }
 
 export const darkTheme: ITheme = {
   body: darkBg,
-  text: darkTextColor,
+  text: darkTextColor
 }

@@ -1,10 +1,11 @@
+// @ts-nocheck
 import React, { useContext } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import styled, { StyledComponent } from 'styled-components'
 import Helmet from 'react-helmet'
 import { Translation } from 'react-i18next'
 import { ThemeContext } from '@/context/'
-import Container from '@/components/Container'
+import Container from '@/layouts/Container'
 import Nav from '@/components/Nav'
 import Header from '@/components/Header'
 import Experience from '@/components/Experience'
@@ -27,7 +28,7 @@ const pageData: (JSX.Element | JSX.Element[])[] = [
   <Education />,
   <Skills />,
   <Contact />,
-  <Footer />,
+  <Footer />
 ]
 
 const App = () => {
@@ -35,13 +36,13 @@ const App = () => {
   return (
     <Router>
       <Translation>
-        {(t) => (
+        {t => (
           <Helmet>
             <title>{t('siteTitle')}</title>
-            <meta name='description' content={t('siteMetaContent')} />
+            <meta name="description" content={t('siteMetaContent')} />
             <link
-              href='https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap'
-              rel='stylesheet'
+              href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap"
+              rel="stylesheet"
             />
           </Helmet>
         )}

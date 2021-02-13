@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import { useTranslation } from 'react-i18next'
 import vnFlag from '@/assets/images/vietnam.svg'
-import usaFlag from '@/assets/images/usa.svg'
+import ukFlag from '@/assets/images/uk.svg'
 
 type Language = {
   id: number
@@ -45,15 +45,15 @@ const languages: Language[] = [
   {
     id: 1,
     imgURL: vnFlag,
-    alt: 'Viet Nam',
-    lng: 'vi',
+    alt: 'Tiếng Việt',
+    lng: 'vi'
   },
   {
     id: 2,
-    imgURL: usaFlag,
-    alt: 'The United States of America',
-    lng: 'en',
-  },
+    imgURL: ukFlag,
+    alt: 'English',
+    lng: 'en'
+  }
 ]
 
 const LanguageSwicher = () => {
@@ -62,7 +62,7 @@ const LanguageSwicher = () => {
 
   useEffect(() => {
     setCurrentLanguage(i18n.language)
-  }, [])
+  }, [i18n.language])
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng)

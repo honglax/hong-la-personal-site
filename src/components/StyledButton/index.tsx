@@ -59,15 +59,15 @@ const StyledButton = ({
   isReverse = false,
   hrefLink,
   children,
-  isDownload = false,
+  isDownload = false
 }: BtnProps) => {
   const { darkMode } = useContext(ThemeContext)
 
   return (
     <StyledLink
       href={hrefLink}
-      target='_blank'
-      rel='noreferrer noopener'
+      target="_blank"
+      rel="noreferrer noopener"
       title="Hong La's Blog"
       download={isDownload}
     >

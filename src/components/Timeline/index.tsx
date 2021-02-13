@@ -7,7 +7,7 @@ import {
   lightTextColor,
   colorPink,
   lightBg,
-  darkBg,
+  darkBg
 } from '@/constant'
 import { ThemeContext } from '@/context'
 
@@ -93,7 +93,7 @@ const Timeline = ({
   toDate,
   title,
   subTitle,
-  content,
+  content
 }: ITimelineProps) => {
   const { darkMode } = useContext(ThemeContext)
   return (

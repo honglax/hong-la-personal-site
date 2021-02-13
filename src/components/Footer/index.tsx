@@ -67,36 +67,36 @@ const socialData: SocialData[] = [
     id: 1,
     name: 'Blog',
     icon: FaCat,
-    href: 'https://blog.hongla.dev',
+    href: 'https://blog.hongla.dev'
   },
   {
     id: 2,
     name: 'Github',
     icon: FaGithub,
-    href: 'https://github.com/honglax',
+    href: 'https://github.com/honglax'
   },
   {
     id: 3,
     name: 'LinkedIn',
     icon: FaLinkedin,
-    href: 'https://www.linkedin.com/in/hongla/',
-  },
+    href: 'https://www.linkedin.com/in/hongla/'
+  }
 ]
 
 const Footer = () => (
   <Translation>
-    {(t) => (
+    {t => (
       <FooterWrapper>
-        <div className='social-wrapper'>
+        <div className="social-wrapper">
           {socialData.map((data: SocialData) => (
             <SocialButton
               key={data.id}
-              target='_blank'
-              rel='noreferrer noopener'
+              target="_blank"
+              rel="noreferrer noopener"
               title={data.name}
               href={data.href}
             >
-              <data.icon className='social-icon' />
+              <data.icon className="social-icon" />
               <span>{data.name}</span>
             </SocialButton>
           ))}

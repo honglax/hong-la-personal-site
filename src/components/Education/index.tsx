@@ -1,6 +1,7 @@
+// @ts-nocheck
 import React from 'react'
 import { Translation } from 'react-i18next'
-import Section from '@/components/Section'
+import Section from '@/layouts/Section'
 import SectionTitle from '@/components/SectionTitle'
 
 import Timeline from '@/components/Timeline'
@@ -11,16 +12,16 @@ interface IEducation {
 
 const qualifications: IEducation[] = [
   {
-    id: 'uit',
+    id: 'uit'
   },
   {
-    id: 'fptPoly',
-  },
+    id: 'fptPoly'
+  }
 ]
 
 const Education = () => (
   <Translation>
-    {(t) => (
+    {t => (
       <Section>
         <SectionTitle
           title={t('education.title')}

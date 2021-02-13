@@ -3,7 +3,7 @@ import styled, { StyledComponent } from 'styled-components'
 import { IoMdCodeDownload } from 'react-icons/io'
 import { Translation } from 'react-i18next'
 import parse from 'html-react-parser'
-import Section from '@/components/Section'
+import Section from '@/layouts/Section'
 import SectionTitle from '@/components/SectionTitle'
 import StyledBtn from '@/components/StyledButton'
 import resume from '@/assets/resume/La-Xuan-Hong-Software-Engineer.pdf'
@@ -28,7 +28,7 @@ const HeaderBtn: StyledComponent<'div', any, {}, never> = styled.div`
 
 const Header = () => (
   <Translation>
-    {(t) => (
+    {t => (
       <Section>
         <SectionTitle
           subTitle={t('header.subTitle')}
@@ -36,7 +36,7 @@ const Header = () => (
         />
         <HeaderContent>{parse(t('header.content'))}</HeaderContent>
         <HeaderBtn>
-          <StyledBtn hrefLink='https://blog.hongla.dev'>
+          <StyledBtn hrefLink="https://blog.hongla.dev">
             {t('header.button.blog')}
           </StyledBtn>
           <StyledBtn
@@ -46,7 +46,7 @@ const Header = () => (
           >
             <div>
               {t('header.button.resume')} &nbsp;
-              <IoMdCodeDownload size='24' />
+              <IoMdCodeDownload size="24" />
             </div>
           </StyledBtn>
         </HeaderBtn>

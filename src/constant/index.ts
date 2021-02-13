@@ -13,5 +13,5 @@ export {
   darkTextColor,
   colorPink,
   colorWhite,
-  progressBarBg,
+  progressBarBg
 }

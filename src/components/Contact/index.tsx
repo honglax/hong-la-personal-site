@@ -1,8 +1,9 @@
+// @ts-nocheck
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import { FaPhone, FaMapMarkerAlt, FaPaperPlane } from 'react-icons/fa'
 import { Translation } from 'react-i18next'
-import Section from '@/components/Section'
+import Section from '@/layouts/Section'
 import SectionTitle from '@/components/SectionTitle'
 import InfoBlock, { InfoProps } from '@/components/InfoBlock'
 
@@ -20,21 +21,21 @@ const ContactWrapper: StyledComponent<'div', any, {}, never> = styled.div`
 const contactData: Partial<InfoProps>[] = [
   {
     id: 'phone',
-    icon: <FaPhone />,
+    icon: <FaPhone />
   },
   {
     id: 'address',
-    icon: <FaMapMarkerAlt />,
+    icon: <FaMapMarkerAlt />
   },
   {
     id: 'email',
-    icon: <FaPaperPlane />,
-  },
+    icon: <FaPaperPlane />
+  }
 ]
 
 const Contact = () => (
   <Translation>
-    {(t) => (
+    {t => (
       <Section>
         <SectionTitle
           title={t('contact.title')}

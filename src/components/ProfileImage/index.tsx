@@ -31,7 +31,7 @@ const ProfileImage = (props: ImageProps) => {
 
   return (
     <StyledProfile>
-      <img width='100%' height='100%' src={imageURL} alt={siteTitle} />
+      <img width="100%" height="100%" src={imageURL} alt={siteTitle} />
     </StyledProfile>
   )
 }

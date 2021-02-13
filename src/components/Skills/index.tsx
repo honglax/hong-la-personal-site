@@ -1,11 +1,12 @@
+// @ts-nocheck
 import React from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import { Translation } from 'react-i18next'
-import Section from '@/components/Section'
+import Section from '@/layouts/Section'
 import SectionTitle from '@/components/SectionTitle'
 import ProgressBar from '@/components/ProgressBar'
 
-type Skill = {
+interface ISkill {
   id: number
   name: string
   progress: number
@@ -27,52 +28,52 @@ const ProgressBarWrapper: StyledComponent<'div', any, {}, never> = styled.div`
   }
 `
 
-const skills: Skill[] = [
+const skills: ISkill[] = [
   {
     id: 1,
     name: 'HTML',
-    progress: 70,
+    progress: 70
   },
   {
     id: 2,
     name: 'CSS',
-    progress: 70,
+    progress: 70
   },
   {
     id: 3,
     name: 'Vanilla JavaScript',
-    progress: 70,
+    progress: 70
   },
   {
     id: 4,
     name: 'Typescript',
-    progress: 50,
+    progress: 50
   },
   {
     id: 5,
     name: 'ReactJS',
-    progress: 50,
+    progress: 50
   },
   {
     id: 6,
     name: 'EmberJS',
-    progress: 60,
+    progress: 60
   },
   {
     id: 7,
     name: 'English',
-    progress: 70,
+    progress: 70
   },
   {
     id: 8,
     name: 'Soft skills',
-    progress: 80,
-  },
+    progress: 80
+  }
 ]
 
 const Skill = () => (
   <Translation>
-    {(t) => (
+    {t => (
       <Section>
         <SectionTitle
           title={t('skill.title')}
@@ -80,7 +81,7 @@ const Skill = () => (
           isCentered={true}
         />
         <SkillsWrapper>
-          {skills.map(({ id, name, progress }: Skill) => (
+          {skills.map(({ id, name, progress }: ISkill) => (
             <ProgressBarWrapper key={`${id}-wrapper`}>
               <ProgressBar
                 key={`${id}-progress-bar`}

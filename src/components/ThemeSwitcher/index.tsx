@@ -24,11 +24,11 @@ const ThemeSwitcher = () => {
   const { darkMode, toggleDarkMode } = useContext(ThemeContext)
 
   return (
-    <DarkSwitcher className='dark-switcher' onClick={toggleDarkMode}>
+    <DarkSwitcher className="dark-switcher" onClick={toggleDarkMode}>
       {darkMode ? (
-        <FaSun className='dark-switcher__icon' size='2rem' />
+        <FaSun className="dark-switcher__icon" size="2rem" />
       ) : (
-        <FaCloudMoon className='dark-switcher__icon' size='2rem' />
+        <FaCloudMoon className="dark-switcher__icon" size="2rem" />
       )}
     </DarkSwitcher>
   )

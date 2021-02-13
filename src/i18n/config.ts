@@ -5,15 +5,15 @@ import { initReactI18next } from 'react-i18next'
 
 export const resources = {
   en: {
-    translation: translationEN,
+    translation: translationEN
   },
   vi: {
-    translation: translationVI,
-  },
+    translation: translationVI
+  }
 } as const
 
 i18n.use(initReactI18next).init({
   lng: 'en',
   debug: true,
-  resources,
+  resources
 })
