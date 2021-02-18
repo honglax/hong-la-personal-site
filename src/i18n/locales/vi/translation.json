@@ -74,7 +74,7 @@
     }
   },
   "footer": {
-    "copyright": "Bản quyền nội dung thuộc về Lã Xuân Hồng.",
-    "content": "Website được tạo ra với ❤️ dành cho React, TypeScript, và Webpack."
+    "copyright": "Bản quyền nội dung thuộc về <b>Lã Xuân Hồng</b>.",
+    "content": "Website được tạo ra với ❤️ dành cho <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>React</a>,&nbsp;<a href='https://www.typescriptlang.org/' target='_blank' rel='noopener noreferrer'>TypeScript</a> và <a href='https://webpack.js.org/' target='_blank' rel='noopener noreferrer'>Webpack</a>."
   }
 }

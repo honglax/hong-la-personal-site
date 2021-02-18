@@ -1,8 +1,10 @@
+// @ts-nocheck
 import React from 'react'
 import { IconType } from 'react-icons'
 import { FaCat, FaGithub, FaLinkedin } from 'react-icons/fa'
 import styled, { StyledComponent } from 'styled-components'
 import { Translation } from 'react-i18next'
+import parse from 'html-react-parser'
 import { colorPink } from '@/constant'
 
 type SocialData = {
@@ -60,6 +62,12 @@ const FooterText: StyledComponent<'p', any, {}, never> = styled.p`
   &:not(:last-child) {
     margin-bottom: 0.5rem;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+  }
 `
 
 const socialData: SocialData[] = [
@@ -101,8 +109,8 @@ const Footer = () => (
             </SocialButton>
           ))}
         </div>
-        <FooterText>© {t('footer.copyright')}</FooterText>
-        <FooterText>{t('footer.content')}</FooterText>
+        <FooterText>© {parse(t('footer.copyright'))}</FooterText>
+        <FooterText>{parse(t('footer.content'))}</FooterText>
       </FooterWrapper>
     )}
   </Translation>

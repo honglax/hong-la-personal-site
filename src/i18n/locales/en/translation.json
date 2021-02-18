@@ -74,7 +74,7 @@
     }
   },
   "footer": {
-    "copyright": "Copyright 2021 by Hong La.",
-    "content": "Build with ❤️ React, TypeScript, and Webpack from scratch."
+    "copyright": "Copyright 2021 by <b>Hong La</b>.",
+    "content": "Build with ❤️ <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>React</a>,&nbsp;<a href='https://www.typescriptlang.org/' target='_blank' rel='noopener noreferrer'>TypeScript</a>, and <a href='https://webpack.js.org/' target='_blank' rel='noopener noreferrer'>Webpack</a> from scratch."
   }
 }

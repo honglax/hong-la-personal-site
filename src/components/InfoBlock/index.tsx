@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import styled, { StyledComponent } from 'styled-components'
 import parse from 'html-react-parser'
-import { colorPink, colorWhite } from '@/constant'
+import { colorPink } from '@/constant'
 import { ThemeContext } from '@/context'
 import { IconType } from 'react-icons'
 
@@ -14,7 +14,7 @@ export type InfoProps = {
 
 const BlockWrapper: StyledComponent<'div', any, {}, never> = styled.div`
   width: calc(100% / 3);
-  background-color: ${colorWhite};
+  background-color: transparent;
   display: flex;
   flex-flow: column nowrap;
   margin: 1rem 0.75rem;
@@ -23,10 +23,6 @@ const BlockWrapper: StyledComponent<'div', any, {}, never> = styled.div`
   border: 1px solid ${colorPink};
   align-items: center;
   justify-content: flex-start;
-
-  &.dark {
-    background-color: transparent;
-  }
 
   @media only screen and (max-width: 767px) {
     width: 100%;
