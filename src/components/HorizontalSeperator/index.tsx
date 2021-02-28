@@ -8,6 +8,7 @@ const StyledHr = styled.hr`
   border: 0;
   border-top: 1px solid ${lightTextColor};
   margin: 0;
+  opacity: 0.3;
 
   &.dark {
     border-color: ${colorPink};
