@@ -14,6 +14,7 @@ import Skills from '@/components/Skills'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import HorizontalSeperator from '@/components/HorizontalSeperator'
+import siteThumbnail from '@/assets/images/personal-site-thumbnail.png'
 
 const Wrapper: StyledComponent<'div', any, {}, never> = styled.div`
   display: flex;
@@ -40,6 +41,9 @@ const App = () => {
           <Helmet>
             <title>{t('siteTitle')}</title>
             <meta name="description" content={t('siteMetaContent')} />
+            <meta property="og:image" content={siteThumbnail} />
+            <meta property="og:description" content={t('siteMetaContent')} />
+            <meta property="og:title" content={t('siteTitle')} />
             <link
               href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap"
               rel="stylesheet"
